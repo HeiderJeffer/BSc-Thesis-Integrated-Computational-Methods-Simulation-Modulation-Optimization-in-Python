@@ -6,11 +6,10 @@
 **🏛️ Institution:**
 University of Baghdad — Department of Physics and Applied Mathematics
 
-**👨‍🎓 Author:**
-Heider Jeffer
+**👨‍🎓 Author:** [Heider Jeffer](https://github.com/HeiderJeffer)
 
-**🧑‍🏫 Supervisor:**
-Dr. Jafar Dhia Jafar
+
+**🧑‍🏫 Supervisor:** [Dr. Jeffer Dhia Jeffer](https://en.wikipedia.org/wiki/Jafar_Dhia_Jafar)
 
 **🌐 Language:**
 English
