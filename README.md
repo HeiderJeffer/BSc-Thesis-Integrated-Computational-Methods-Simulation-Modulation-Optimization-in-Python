@@ -1,9 +1,9 @@
-## 🎓 Bachelor's Thesis Summary
+## 🎓 Bachelor’s Thesis Summary
 
 **📘 Title:**
 **Integrated Computational Methods: Simulation, Modulation & Optimization in Python**
 
-**🏛 Institution:**
+**🏛️ Institution:**
 University of Baghdad — Department of Physics and Applied Mathematics
 
 **👨‍🎓 Author:**
@@ -18,21 +18,20 @@ English
 **📅 Date:**
 June 2008
 
-**📂 Project Notebook:**
-[View on GitHub](https://github.com/HeiderJeffer/BSc-Thesis-Integrated-Computational-Methods-Simulation-Modulation-Optimization-in-Python/blob/main/BSC%20Python.ipynb)
+**🗂️ Project Notebook:**
+📎 [View on GitHub](https://github.com/HeiderJeffer/BSc-Thesis-Integrated-Computational-Methods-Simulation-Modulation-Optimization-in-Python/blob/main/BSC%20Python.ipynb)
 
 **📄 Full Thesis PDF:**
-[View on Google Drive](https://drive.google.com/file/d/17Lo4m5VZGAK9A5stfMTnROEZbqYOyMZa/view?usp=sharing)
+📥 [View on Google Drive](https://drive.google.com/file/d/17Lo4m5VZGAK9A5stfMTnROEZbqYOyMZa/view?usp=sharing)
 
 
-This project explores an integrated Python framework combining:
+🔍 This project integrates:
 
-* **Discrete Event Simulation** (e.g., queuing systems)
-* **Signal Modulation** (AM, FM, ASK, FSK)
-* **Optimization Techniques** (Gradient Descent & Genetic Algorithms)
+* 🧮 **Discrete Event Simulation** (e.g., queuing systems)
+* 📡 **Signal Modulation** (AM, FM, ASK, FSK)
+* 🧠 **Optimization Algorithms** (Gradient Descent & Genetic Algorithms)
 
-The code and analysis demonstrate how these computational methods can work together to simulate, analyze, and improve complex systems.
-
+💻 Developed entirely in **Python**, this work demonstrates how combining these methods can simulate, analyze, and enhance complex system behavior.
 
 
 ### **Introduction and Aim**
