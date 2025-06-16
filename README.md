@@ -6,7 +6,8 @@
 * **Supervisor:** [Dr. Jeffer Dhia Jeffer](https://en.wikipedia.org/wiki/Jafar_Dhia_Jafar)
 * **Language:** English
 * **Submitted:** June 2008
-* **•	Project Repository:** [View on GitHub](https://github.com/HeiderJeffer/BSc-Thesis-Integrated-Computational-Methods-Simulation-Modulation-Optimization-in-Python/blob/main/BSC%20Python.ipynb)
+* **Project Repository:** [View on GitHub](https://github.com/HeiderJeffer/BSc-Thesis-Integrated-Computational-Methods-Simulation-Modulation-Optimization-in-Python/blob/main/BSC%20Python.ipynb)
+* **Thesis Repository:** [View on GitHub](https://github.com/HeiderJeffer/Bachelor-Thesis-Summary)
 * **Full Thesis PDF:** [View on Google Drive](https://drive.google.com/file/d/17Lo4m5VZGAK9A5stfMTnROEZbqYOyMZa/view?usp=sharing)
 
 
