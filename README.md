@@ -1,29 +1,22 @@
-## 🎓 Bachelor’s Thesis Summary
+# Bachelor’s Thesis Summary
 # Integrated Computational Methods: Simulation, Modulation & Optimization in Python
 
-**🏛️ Institution:** University of Baghdad — Department of Physics and Applied Mathematics
-
-**👨‍🎓 Author:** [Heider Jeffer](https://github.com/HeiderJeffer)
-
-
-**🧑‍🏫 Supervisor:** [Dr. Jeffer Dhia Jeffer](https://en.wikipedia.org/wiki/Jafar_Dhia_Jafar)
-
-**🌐 Language:** English
-
-**Submitted:** June 2008
-
-**🗂️ Project Notebook:** 📎 [View on GitHub](https://github.com/HeiderJeffer/BSc-Thesis-Integrated-Computational-Methods-Simulation-Modulation-Optimization-in-Python/blob/main/BSC%20Python.ipynb)
-
-**📄 Full Thesis PDF:** 📥 [View on Google Drive](https://drive.google.com/file/d/17Lo4m5VZGAK9A5stfMTnROEZbqYOyMZa/view?usp=sharing)
+* **Institution:** University of Baghdad — Department of Physics and Applied Mathematics
+* **Author:** [Heider Jeffer](https://github.com/HeiderJeffer)
+* **Supervisor:** [Dr. Jeffer Dhia Jeffer](https://en.wikipedia.org/wiki/Jafar_Dhia_Jafar)
+* **Language:** English
+* **Submitted:** June 2008
+* **•	Project Repository:** [View on GitHub](https://github.com/HeiderJeffer/BSc-Thesis-Integrated-Computational-Methods-Simulation-Modulation-Optimization-in-Python/blob/main/BSC%20Python.ipynb)
+* **Full Thesis PDF:** [View on Google Drive](https://drive.google.com/file/d/17Lo4m5VZGAK9A5stfMTnROEZbqYOyMZa/view?usp=sharing)
 
 
-🔍 This project integrates:
+This project integrates:
 
-* 🧮 **Discrete Event Simulation** (e.g., queuing systems)
-* 📡 **Signal Modulation** (AM, FM, ASK, FSK)
-* 🧠 **Optimization Algorithms** (Gradient Descent & Genetic Algorithms)
+* **Discrete Event Simulation** (e.g., queuing systems)
+*  **Signal Modulation** (AM, FM, ASK, FSK)
+*  **Optimization Algorithms** (Gradient Descent & Genetic Algorithms)
 
-💻 Developed entirely in **Python**, this work demonstrates how combining these methods can simulate, analyze, and enhance complex system behavior.
+Developed entirely in **Python**, this work demonstrates how combining these methods can simulate, analyze, and enhance complex system behavior.
 
 
 ### **Introduction and Aim**
