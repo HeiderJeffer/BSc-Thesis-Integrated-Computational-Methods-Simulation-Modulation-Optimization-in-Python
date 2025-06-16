@@ -13,9 +13,6 @@
 **Date**: June 2008 
 
 
-
-
-
 ### **Introduction and Aim**
 
 This Bachelor’s thesis investigates the integration of three core computational approaches—**simulation**, **modulation**, and **optimization**—as applied through the Python programming language. The study stems from the recognition that many real-world systems are too complex for closed-form solutions, and computational tools must be leveraged to model, predict, and improve performance.
@@ -136,6 +133,220 @@ The study successfully demonstrates the integrated application of simulation, mo
 * Yang, R. (1994). "Genetic Algorithms and Their Applications," *Artificial Intelligence*.
 * Nocedal, J., & Wright, S. J. (1999). *Numerical Optimization*. Springer.
 * Gross, D. & Harris, C. M. (1998). *Fundamentals of Queueing Theory*. Wiley.
+
+
+### **APPENDIX**
+
+
+Here's a **step-by-step walkthrough** of both parts of the code: the **Discrete Event Simulation (DES)** and the **Signal Modulation**.
+
+## Part A: Discrete Event Simulation (Queue System)
+
+### 1. **Imports and Setup**
+
+```python
+import heapq
+import random
+```
+
+* `heapq` is used to manage a priority queue for scheduling events.
+* `random` is used to generate exponentially distributed inter-arrival and service times.
+
+### 2. **Define an Event Class**
+
+```python
+class Event:
+    def __init__(self, time, event_type):
+        self.time = time
+        self.event_type = event_type
+
+    def __lt__(self, other):
+        return self.time < other.time
+```
+
+* Each event has a `time` and a `type` (either `'arrival'` or `'departure'`).
+* `__lt__` allows the heap to sort events by time.
+
+
+### 3. **Simulation Function**
+
+```python
+def simulate_queue(arrival_rate=1.0, service_rate=1.2, sim_time=100):
+```
+
+* Simulates a single-server queue.
+* `arrival_rate`: λ (e.g., 1 customer per unit time).
+* `service_rate`: μ (e.g., 1.2 customers served per unit time).
+* `sim_time`: How long to simulate.
+
+#### State Variables
+
+```python
+    clock = 0
+    queue = []
+    event_queue = []
+    busy = False
+    wait_times = []
+```
+
+* `clock`: Simulation time.
+* `queue`: FIFO line of waiting customers.
+* `event_queue`: Future events in a min-heap.
+* `busy`: Server state.
+* `wait_times`: List of customer wait durations.
+
+#### Helper to Schedule Events
+
+```python
+    def schedule_event(time, event_type):
+        heapq.heappush(event_queue, Event(time, event_type))
+```
+
+### 4. **Initialize First Arrival**
+
+```python
+    schedule_event(random.expovariate(arrival_rate), 'arrival')
+```
+
+* The first arrival is scheduled using an exponential distribution.
+
+
+### 5. **Simulation Loop**
+
+```python
+    while event_queue and clock < sim_time:
+        event = heapq.heappop(event_queue)
+        clock = event.time
+```
+
+* Continues until simulation time ends or no more events.
+* Retrieves the next event by time.
+
+#### On `arrival`:
+
+```python
+        if event.event_type == 'arrival':
+            if not busy:
+                busy = True
+                service_time = random.expovariate(service_rate)
+                schedule_event(clock + service_time, 'departure')
+            else:
+                queue.append(clock)
+            schedule_event(clock + random.expovariate(arrival_rate), 'arrival')
+```
+
+* If the server is free, service starts immediately.
+* If busy, the arrival time is stored in the queue.
+* A new arrival is always scheduled.
+
+#### On `departure`:
+
+```python
+        elif event.event_type == 'departure':
+            if queue:
+                arrival_time = queue.pop(0)
+                wait_times.append(clock - arrival_time)
+                service_time = random.expovariate(service_rate)
+                schedule_event(clock + service_time, 'departure')
+            else:
+                busy = False
+```
+
+* If queue is not empty: serve next customer, record wait time.
+* If queue is empty: server becomes idle.
+
+
+### 6. **Return Average Wait Time**
+
+```python
+    return sum(wait_times)/len(wait_times) if wait_times else 0.0
+```
+
+### 7. **Run the Simulation**
+
+```python
+avg_wait = simulate_queue()
+print("Average Wait Time:", avg_wait)
+```
+
+## Part B: Signal Modulation (AM, FM, ASK, FSK)
+
+### 1. **Imports**
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+```
+
+### 2. **Time and Signal Setup**
+
+```python
+t = np.linspace(0, 1, 1000)
+carrier_freq = 10
+message_freq = 1
+carrier = np.sin(2 * np.pi * carrier_freq * t)
+message = np.sin(2 * np.pi * message_freq * t)
+```
+
+* `t`: Time array (1 second, 1000 samples).
+* `carrier`: High-frequency sine wave.
+* `message`: Low-frequency sine wave.
+
+
+
+### 3. **Amplitude Modulation (AM)**
+
+```python
+am = (1 + message) * carrier
+```
+
+* Message signal scales the amplitude of the carrier.
+
+
+
+### 4. **Frequency Modulation (FM)**
+
+```python
+k = 5
+fm = np.sin(2 * np.pi * carrier_freq * t + k * np.sin(2 * np.pi * message_freq * t))
+```
+
+* Message changes the **phase**, thus frequency of carrier.
+
+
+### 5. **Amplitude Shift Keying (ASK)**
+
+```python
+bitstream = np.array([1, 0, 1, 1, 0])
+ask = np.repeat(bitstream, 200) * np.sin(2 * np.pi * carrier_freq * t[:1000])
+```
+
+* Binary bits scale the amplitude (on/off keying).
+
+
+### 6. **Frequency Shift Keying (FSK)**
+
+```python
+f1, f2 = 5, 15
+fsk = np.concatenate([
+    np.sin(2 * np.pi * f1 * t[:200]) if bit == 0 else np.sin(2 * np.pi * f2 * t[:200])
+    for bit in bitstream
+])
+```
+
+* 0 and 1 are encoded using different frequencies (`f1` and `f2`).
+
+### 7. **Plot All Signals**
+
+```python
+plt.figure(figsize=(12, 8))
+plt.subplot(4, 1, 1); plt.plot(t, am); plt.title("AM Signal")
+plt.subplot(4, 1, 2); plt.plot(t, fm); plt.title("FM Signal")
+plt.subplot(4, 1, 3); plt.plot(t, ask); plt.title("ASK Signal")
+plt.subplot(4, 1, 4); plt.plot(fsk); plt.title("FSK Signal")
+plt.tight_layout()
+plt.show()
+```
 
 
 
