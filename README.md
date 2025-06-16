@@ -1,27 +1,20 @@
 ## 🎓 Bachelor’s Thesis Summary
+# Integrated Computational Methods: Simulation, Modulation & Optimization in Python
 
-**📘 Title:**
-**Integrated Computational Methods: Simulation, Modulation & Optimization in Python**
-
-**🏛️ Institution:**
-University of Baghdad — Department of Physics and Applied Mathematics
+**🏛️ Institution:** University of Baghdad — Department of Physics and Applied Mathematics
 
 **👨‍🎓 Author:** [Heider Jeffer](https://github.com/HeiderJeffer)
 
 
 **🧑‍🏫 Supervisor:** [Dr. Jeffer Dhia Jeffer](https://en.wikipedia.org/wiki/Jafar_Dhia_Jafar)
 
-**🌐 Language:**
-English
+**🌐 Language:** English
 
-**📅 Date:**
-June 2008
+**📅 Date:** June 2008
 
-**🗂️ Project Notebook:**
-📎 [View on GitHub](https://github.com/HeiderJeffer/BSc-Thesis-Integrated-Computational-Methods-Simulation-Modulation-Optimization-in-Python/blob/main/BSC%20Python.ipynb)
+**🗂️ Project Notebook:** 📎 [View on GitHub](https://github.com/HeiderJeffer/BSc-Thesis-Integrated-Computational-Methods-Simulation-Modulation-Optimization-in-Python/blob/main/BSC%20Python.ipynb)
 
-**📄 Full Thesis PDF:**
-📥 [View on Google Drive](https://drive.google.com/file/d/17Lo4m5VZGAK9A5stfMTnROEZbqYOyMZa/view?usp=sharing)
+**📄 Full Thesis PDF:** 📥 [View on Google Drive](https://drive.google.com/file/d/17Lo4m5VZGAK9A5stfMTnROEZbqYOyMZa/view?usp=sharing)
 
 
 🔍 This project integrates:
