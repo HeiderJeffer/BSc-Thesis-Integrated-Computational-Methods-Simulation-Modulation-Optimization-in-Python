@@ -10,7 +10,7 @@
 
 **🌐 Language:** English
 
-**📅 Date:** June 2008
+**Submitted:** June 2008
 
 **🗂️ Project Notebook:** 📎 [View on GitHub](https://github.com/HeiderJeffer/BSc-Thesis-Integrated-Computational-Methods-Simulation-Modulation-Optimization-in-Python/blob/main/BSC%20Python.ipynb)
 
