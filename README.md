@@ -1,4 +1,4 @@
-# Bachelor’s Thesis Summary
+# BSc Thesis – Physics & Applied Mathematics
 # Integrated Computational Methods: Simulation, Modulation & Optimization in Python
 
 * **Institution:** University of Baghdad — Department of Physics and Applied Mathematics
